@@ -1,5 +1,6 @@
 ## Comic Generator
 This project allows to **generate a comics** and uses as base the project [AguiaJ](https://github.com/andre-santos-pt/aguiaj).
+![image](https://drive.google.com/file/d/1kjCp5tf4qXcpoYt_H60tuV-Sl9itoiyq/view?usp=sharing)
 
 ## How to Use
 
@@ -48,6 +49,9 @@ void setVinheta(int xPosition, int yPosition, Vinheta v)
 ```
 
 ### Other Features
+
+## Next Steps
+Update all information to English and build a new version without using AguiaJ.
 
 ## AguiaJ
 More information about the [AguiaJ project](https://github.com/andre-santos-pt/aguiaj).
