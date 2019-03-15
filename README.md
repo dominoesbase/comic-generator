@@ -1,4 +1,4 @@
-## Comic Generator ![Image](https://img.shields.io/badge/license-EPL--2.0-blue.svg)![Image](https://img.shields.io/badge/license-EPL--2.0-blue.svg)
+## Comic Generator ![Image](https://img.shields.io/badge/license-EPL--2.0-blue.svg)![Image](https://img.shields.io/badge/status-unstable-red.svg)
 This project allows to **generate a comics** and uses as base the project [AguiaJ](https://github.com/andre-santos-pt/aguiaj).
 
 <img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/plpl.png" width="200"/>
