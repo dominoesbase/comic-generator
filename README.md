@@ -1,7 +1,7 @@
-## Comic Generator
+## Comic Generator ![Image](https://img.shields.io/pypi/status/Django.svg)
 This project allows to **generate a comics** and uses as base the project [AguiaJ](https://github.com/andre-santos-pt/aguiaj).
 
-<img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/img/plpl.png" width="200"/>
+<img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/plpl.png" width="200"/>
 
 **Panels** and **tiers** make up a **board**.
 
@@ -51,7 +51,7 @@ void setVinheta(int xPosition, int yPosition, Vinheta v)
 ```
 
 #### Build a Board - Example
-<img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/img/sapinho.png" width="200"/>
+<img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/sapinho.png" width="200"/>
 
 ```java
 Prancha p = new Prancha(...);
