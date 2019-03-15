@@ -67,9 +67,9 @@ class Vinheta {
 
 	/**
 	 * Build a new Vinheta with with frame black by default.
-	 * @param imagemVinheta Imagem Vinheta
-	 * @param tamanhoMoldura Size Vinheta
-	 * @param tipoMoldura Type Vinheta
+	 * @param image Imagem Vinheta
+	 * @param sizeFrame Size Vinheta
+	 * @param typeFrame Type Vinheta
 	 */
 	Vinheta(ColorImage image, int sizeFrame, int typeFrame) {
 		this(image, sizeFrame, typeFrame, Color.BLACK);
