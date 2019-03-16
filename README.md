@@ -242,7 +242,7 @@ Vinheta[][] buildMatrix(int width, int height)
 ```
 
 ## Next Steps
-Update all information to English and build a new version without using AguiaJ.
+Update all information to English and build a new version without AguiaJ.
 
 ## AguiaJ
 More information about the [AguiaJ project](https://github.com/andre-santos-pt/aguiaj).
