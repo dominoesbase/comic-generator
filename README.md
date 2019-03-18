@@ -1,7 +1,7 @@
 ## Comic Generator ![Image](https://img.shields.io/badge/license-EPL--2.0-blue.svg)![Image](https://img.shields.io/badge/status-unstable-red.svg)
 This project allows to **generate a comics** and uses as base the project [AguiaJ](https://github.com/andre-santos-pt/aguiaj).
 
-<img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/plpl.png" width="200"/>
+<img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/images/plpl.png" width="200"/>
 
 **Panels** and **tiers** make up a **board**.
 
@@ -14,24 +14,29 @@ Given a certain image, the **panel** is obtained through the Vinheta builder.
 /**
  * Build a new Panel.
  * @param image - Image Panel
- * @param sizeFrame - Size Panel
- * @param typeFrame - Type Frame Panel
- * @param colorFrame - Color Frame Panel
+ * @param sizeFrame - Panel size
+ * @param typeFrame - Frame panel type
+ * @param colorFrame - Frame panel color
  */
-Vinheta v = new Vinheta(ColorImage image, int sizeFrame, int typeFrame, Color colorFrame);
+
+Panel p = new Panel(ColorImage image, int sizeFrame, int typeFrame, Color colorFrame);
 ```
 Build a **new Panel** with frame black by default.
 
 ```java
 /**
- * Build a new Panel with frame black by default.
- * @param image -  Imagem Vinheta
- * @param sizeFrame - Size Vinheta
- * @param typeFrame - Type Vinheta
+ * Build a new Panel with black frame by default.
+ * @param image - Image Panel
+ * @param sizeFrame - Panel size
+ * @param typeFrame - Panel type
  */
 
- Vinheta vBlack = new Vinheta(ColorImage image, int sizeFrame, int typeFrame);
+ Panel pBlack = new Panel(ColorImage image, int sizeFrame, int typeFrame);
 ```
+#### Frame Type - Information
+Frame Type receives the integer value **a**, where **a** is an element of the set **A = {0, 1, 2, 3}**. The integer define the Frame Type.
+<img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/images/frame_type.png" width="200"/>
+
 ### Build a Board
 Given a set of Panels it is possible to generate a Board.
 
@@ -51,7 +56,7 @@ void setVinheta(int xPosition, int yPosition, Vinheta v)
 ```
 
 #### Build a Board - Example
-<img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/sapinho.png" width="200"/>
+<img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/images/sapinho.png" width="200"/>
 
 ```java
 Prancha p = new Prancha(...);
@@ -63,49 +68,49 @@ p.setVinheta(0, 1, Vinheta frog);
 ## Other Features
 ### Panel
 
-Know the height of the Panel.
+Get Panel Height.
 
 ```java
 int getHeightVinheta()
 ```
 
-Know the width of the Panel.
+Get Panel Width
 
 ```java
 int getWidthVinheta()
 ```
 
-Returns image embedded in the Panel.
+Get image embedded in the Panel.
 
 ```java
 ColorImage getImage()
 ```
 
-Know the size frame.
+Get frame size.
 
 ```java
 int getSizeFrame()
 ```
 
-Know the type frame.
+Get frame type.
 
 ```java
 int getTypeFrame()
 ```
 
-Know the color frame.
+Get frame color.
 
 ```java
 Color getColorFrame()
 ```
 
-Know the black and white image.
+Convert image color to black and white image.
 
 ```java
 ColorImage getImageBlackAndWhite()
 ```
 
-Know the current image state.
+Get the current image state.
 
 ```java
 boolean getStateImageVinheta()
@@ -129,20 +134,20 @@ Change type frame Panel.
 setTypeFrame(int type)
 ```
 
-Show black and white image Panel.
+Set black and white image Panel.
 
 ```java
 setBlackAndWhiteImage()
 ```
-Show color image Panel.
+Set color image Panel.
 
 ```java
 setColorImage()
 ```
-Return the sticker according to all specifications.
+Get Panel according all specifications.
 
 ```java
-ColorImage getVinheta()
+ColorImage getPanel()
 ```
 ### BOARD
 
