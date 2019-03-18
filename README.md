@@ -66,7 +66,7 @@ p.setPanel(0, 1, Panel frog);
 ```
 
 ## Other Features
-### Panel
+### PANEL
 
 Get Panel Height.
 
