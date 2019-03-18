@@ -8,7 +8,7 @@ This project allows to **generate a comics** and uses as base the project [Aguia
 ## How to Use
 
 ### Build a Panel
-Given a certain image, the **panel** is obtained through the Vinheta builder.
+Given a certain image, the **panel** is obtained through the Panel constructor.
 
 ```java
 /**
@@ -35,7 +35,7 @@ Build a **new Panel** with frame black by default.
 ```
 #### Frame Type - Information
 Frame Type receives the integer value **a**, where **a** is an element of the set **A = {0, 1, 2, 3}**. The integer define the Frame Type.
-<img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/images/frame_type.png" width="200"/>
+<img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/images/frame_type.png" width="600"/>
 
 ### Build a Board
 Given a set of Panels it is possible to generate a Board.
