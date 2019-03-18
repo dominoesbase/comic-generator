@@ -58,7 +58,8 @@ class Panel {
 		// Build black and white image
 		for(int x = 0; x != this.image.getWidth(); x++) {
 			for(int y = 0; y != this.image.getHeight(); y++) {
-				int luminance = image.getColor(x, y).getLuminance();
+				int luminan
+				ce = image.getColor(x, y).getLuminance();
 				Color luminanceColor = new Color(luminance, luminance, luminance);
 				blackAndWhite.setColor(x, y, luminanceColor);;
 			}

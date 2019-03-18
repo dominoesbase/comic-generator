@@ -72,12 +72,4 @@ class Utilities {
 			}
 		}
 	}
-
-	static int teste(Vinheta v) {
-		int perimetroImagem = 2*v.getImage().getWidth() + 2*v.getImage().getHeight();
-		int constante = perimetroImagem/2*v.getSizeFrame();
-		int expressao = Math.abs((perimetroImagem - constante*v.getSizeFrame())/constante);
-
-		return expressao;
-	}
 }
