@@ -1,5 +1,5 @@
 /*******************************************************************************
-* Copyright (c) 2014 Andre L. Santos.
+* Copyright (c) 2014 Jorge V. Rodrigues.
 * All rights reserved. This program and the accompanying materials
 * are made available under the terms of the Eclipse Public License v2.0
 * which accompanies this distribution.
