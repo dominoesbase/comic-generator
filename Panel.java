@@ -28,9 +28,9 @@ class Panel {
 	/**
 	 * Build a new Panel.
 	 * @param image - Image Panel
-	 * @param sizeFrame - Panel size
-	 * @param typeFrame - Frame panel type
-	 * @param colorFrame - Frame panel color
+	 * @param sizeFrame - Frame size
+	 * @param typeFrame - Frame type
+	 * @param colorFrame - Frame color
 	 */
 	Panel(ColorImage image, int sizeFrame, int typeFrame, Color colorFrame) {
 
@@ -68,8 +68,8 @@ class Panel {
 	/**
 	 * Build a new Panel with black frame by default.
 	 * @param image - Image Panel
-	 * @param sizeFrame - Panel size
-	 * @param typeFrame - Panel type
+	 * @param sizeFrame - Frame size
+	 * @param typeFrame - Frame type
 	 */
 	Panel(ColorImage image, int sizeFrame, int typeFrame) {
 		this(image, sizeFrame, typeFrame, Color.BLACK);

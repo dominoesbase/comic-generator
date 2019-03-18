@@ -14,9 +14,9 @@ Given a certain image, the **panel** is obtained through the Vinheta builder.
 /**
  * Build a new Panel.
  * @param image - Image Panel
- * @param sizeFrame - Panel size
- * @param typeFrame - Frame panel type
- * @param colorFrame - Frame panel color
+ * @param sizeFrame - Frame size
+ * @param typeFrame - Frame type
+ * @param colorFrame - Frame color
  */
 
 Panel p = new Panel(ColorImage image, int sizeFrame, int typeFrame, Color colorFrame);
@@ -27,8 +27,8 @@ Build a **new Panel** with frame black by default.
 /**
  * Build a new Panel with black frame by default.
  * @param image - Image Panel
- * @param sizeFrame - Panel size
- * @param typeFrame - Panel type
+ * @param sizeFrame - Frame size
+ * @param typeFrame - Frame type
  */
 
  Panel pBlack = new Panel(ColorImage image, int sizeFrame, int typeFrame);
