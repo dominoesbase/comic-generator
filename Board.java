@@ -40,7 +40,7 @@ class Board {
 	}
 
 	/**
-	 * Know the width of the Board according to all specifications.
+	 * Get the width of the Board according all specifications.
 	 * @return width of the Board
 	 */
 	int getWidthBoard() {
@@ -75,7 +75,7 @@ class Board {
 	}
 
 	/**
-	 * Know the height of the Board according to all specifications.
+	 * Know the height of the Board according all specifications.
 	 * @return  height of the Board
 	 */
 	int getHeightBoard() {

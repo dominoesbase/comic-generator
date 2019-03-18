@@ -1,7 +1,7 @@
 ## Comic Generator ![Image](https://img.shields.io/badge/license-EPL--2.0-blue.svg)![Image](https://img.shields.io/badge/status-stable-green.svg)
 This project allows to **generate a comics** and uses as base the project [AguiaJ](https://github.com/andre-santos-pt/aguiaj).
 
-<img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/images/plpl.png" width="200"/>
+<img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/images/plpl.png" width="300"/>
 
 **Panels** and **tiers** make up a **board**.
 
@@ -31,10 +31,10 @@ Build a **new Panel** with frame black by default.
  * @param typeFrame - Frame type
  */
 
- Panel pBlack = new Panel(ColorImage image, int sizeFrame, int typeFrame);
+Panel pBlack = new Panel(ColorImage image, int sizeFrame, int typeFrame);
 ```
 #### Frame Type - Information
-Frame Type receives the integer value **a**, where **a** is an element of the set **A = {0, 1, 2, 3}**. The integer define the Frame Type.
+**Frame Type** receives the integer value **a**, where **a** is an element of the set **A = {0, 1, 2, 3}**. The integer define the Frame Type.
 <img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/images/frame_type.png" width="600"/>
 
 ### Build a Board
@@ -56,7 +56,7 @@ void setPanel(int xPosition, int yPosition, Panel v)
 ```
 
 #### Build a Board - Example
-<img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/images/sapinho.png" width="200"/>
+<img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/images/sapinho.png" width="300"/>
 
 ```java
 Board p = new Board(...);
@@ -151,13 +151,13 @@ ColorImage getPanel()
 ```
 ### BOARD
 
-Know the width of the Board according to all specifications.
+Get width of the Board according all specifications.
 
 ```java
 int getWidthBoard()
 ```
 
-Know the height of the Board according to all specifications.
+Get height of the Board according all specifications.
 
 ```java
 int getHeightBoard()
