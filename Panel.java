@@ -142,7 +142,7 @@ class Panel {
 
 	/**
 	 * Change size frame Panel.
-	 * @param size New size Frame
+	 * @param size - New size Frame
 	 */
 	void setSizeFrame(int size) {
 		if(size < 0) {
@@ -154,7 +154,7 @@ class Panel {
 
 	/**
 	 * Change color frame Panel.
-	 * @param color New color frame
+	 * @param color - New color frame
 	 */
 	void setColorFrame(Color color) {
 		if(color == null) {
@@ -166,7 +166,7 @@ class Panel {
 
 	/**
 	 * Change type frame Panel.
-	 * @param type New type frame
+	 * @param type - New type frame
 	 */
 	void setTypeFrame(int type) {
 		if(type < 0 || type > 3) {
