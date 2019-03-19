@@ -65,7 +65,7 @@ Board p = new Board(6);
 p.setPanel(0, 1, Panel frog);
 
 // Insert panel car on p
-p.setPanel(1, 2, Panel Car);
+p.setPanel(1, 2, Panel car);
 ```
 
 ## Other Features
