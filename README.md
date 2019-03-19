@@ -66,6 +66,7 @@ p.setPanel(0, 1, Panel frog);
 ```
 
 ## Other Features
+
 ### PANEL
 
 Get Panel Height.
@@ -169,55 +170,55 @@ Define the number of Panels on the Board.
 void setNumberOfStrips(int strips)
 ```
 
-Define the number of Panels on the particular Panel.
+Define number of strips on the particular Panel.
 
 ```java
 setNumberOfPanels(int locationStrips, int numberOfPanels)
 ```
 
-To change the distance of the Panels.
+Change Panels distance.
 
 ```java
 void setDistance(int distance)
 ```
 
-To replace a Panel image.
+Replace a Panel image.
 
 ```java
 void setPanel(int xPosition, int yPosition, Panel v)
 ```
 
-To modify size frame of a particular Panel.
+Modify frame size of a particular Panel.
 
 ```java
 void setPanelSizeFrame(int xPosition, int yPosition, int sizeFrame)
 ```
 
-To modify color frame of a particular Panel.
+Modify frame color of a particular Panel.
 
 ```java
 void setColorFramePanel(int xPosition, int yPosition, Color colorFrame)
 ```
 
-Show image black and white panel.
+Show Panel with image black and white.
 
 ```java
 void setBlackAndWhitePanel(int xPosition, int yPosition)
 ```
 
-Show Panel color image.
+Show Panel with real image color.
 
 ```java
 void setColorImagePanel(int xPosition, int yPosition)
 ```
 
-To modify the type frame of a Panel.
+Modify the frame type of a Panel.
 
 ```java
 void setTypePanel(int xPosition, int yPosition, int typeFrame)
 ```
 
-Operation to display image corresponding to the Board.
+ Get image associated with the board.
 
 ```java
 ColorImage getBoard()
@@ -229,13 +230,13 @@ This method allows you to split a Panel and create new Panel.
 setDividirPanel(int xPosition, int yPosition, int value)
 ```
 
-To know the maximum height of a tier.
+Get the maximum height of a tier.
 
 ```java
 int maximumHeight(Panel[] v)
 ```
 
-To know the maximum number of Panels on a tier or the number of Panels on a tier.
+Get the maximum number of Panels on a strip or the number of Panels on a strip.
 
 ```java
 int maximumPanelsStrip(Panel[][] v, int locationLine, boolean access)

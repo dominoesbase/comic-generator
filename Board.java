@@ -22,7 +22,7 @@ class Board {
 
 	/**
 	 * Build a Board of a CS.
-	 * @param strips Number of strips
+	 * @param strips - Number of strips
 	*/
 	Board(int strips) {
 
@@ -40,7 +40,7 @@ class Board {
 	}
 
 	/**
-	 * Get the width of the Board according all specifications.
+	 * Get width of the Board according all specifications.
 	 * @return width of the Board
 	 */
 	int getWidthBoard() {
@@ -75,7 +75,7 @@ class Board {
 	}
 
 	/**
-	 * Know the height of the Board according all specifications.
+	 * Get height of the Board according all specifications.
 	 * @return  height of the Board
 	 */
 	int getHeightBoard() {
@@ -97,7 +97,7 @@ class Board {
 
 	/**
 	 * Define the number of strips on the Board.
-	 * @param strips Number of strips on the Board
+	 * @param strips - Number of strips on the Board
 	 */
 	void setNumberOfStrips(int strips) {
 		if(strips <= 0) {
@@ -150,9 +150,9 @@ class Board {
 	}
 
 	/**
-	 * Define the number of strips on the particular Panel.
-	 * @param locationStrips Location Strip
-	 * @param numberOfPanels Define number of Panels
+	 * Define number of strips on the particular Panel.
+	 * @param locationStrips - Location Strip
+	 * @param numberOfPanels - Define number Panels
 	 */
 	void setNumberOfPanels(int locationStrips, int numberOfPanels) {
 		if(locationStrips < 0 || locationStrips >= Board.length) {
@@ -229,8 +229,8 @@ class Board {
 	}
 
 	/**
-	 * To change the distance of the stickers.
-	 * @param distance Distance
+	 * Change Panels distance.
+	 * @param distance - Distance
  	 */
 	void setDistance(int distance) {
 		if(distance < 0) {
@@ -241,10 +241,10 @@ class Board {
 	}
 
 	/**
-	 * To replace a Panel image.
-	 * @param xPosition Row position
-	 * @param yPosition Column position
-	 * @param v New Panel
+	 * Replace a Panel image.
+	 * @param xPosition - Row position
+	 * @param yPosition - Column position
+	 * @param v - New Panel
 	 */
 	void setPanel(int xPosition, int yPosition, Panel v) {
 		illegalPosition(xPosition, yPosition, false);
@@ -254,10 +254,10 @@ class Board {
 	}
 
 	/**
-	 * To modify size frame of a particular Panel.
-	 * @param xPosition Row Position
-	 * @param yPosition Column Position
-	 * @param sizeFrame Size Frame
+	 * Modify frame size of a particular Panel.
+	 * @param xPosition - Row Position
+	 * @param yPosition - Column Position
+	 * @param sizeFrame - Size Frame
 	 */
 	void setPanelSizeFrame(int xPosition, int yPosition, int sizeFrame) {
 		illegalPosition(xPosition, yPosition, true);
@@ -266,10 +266,10 @@ class Board {
 	}
 
 	/**
-	 * To modify color frame of a particular Panel.
-	 * @param xPosition Row Position
-	 * @param yPosition Column position
-	 * @param colorFrame Color Frame
+	 * Modify frame color of a particular Panel.
+	 * @param xPosition - Row Position
+	 * @param yPosition - Column position
+	 * @param colorFrame - Color Frame
 	 */
 	void setColorFramePanel(int xPosition, int yPosition, Color colorFrame) {
 		illegalPosition(xPosition, yPosition, true);
@@ -278,9 +278,9 @@ class Board {
 	}
 
 	/**
-	 * Show Panel black and white image.
-	 * @param xPosition Row position
-	 * @param yPosition column
+	 * Show Panel with image black and white.
+	 * @param xPosition - Row position
+	 * @param yPosition - column
 	 */
 	void setBlackAndWhitePanel(int xPosition, int yPosition) {
 		illegalPosition(xPosition, yPosition, true);
@@ -289,9 +289,9 @@ class Board {
 	}
 
 	/**
-	 * Show Panel color image.
-	 * @param xPosition Row position
-	 * @param yPosition Column position
+	 * Show Panel with real image color.
+	 * @param xPosition - Row position
+	 * @param yPosition - Column position
 	 */
 	void setColorImagePanel(int xPosition, int yPosition) {
 		illegalPosition(xPosition, yPosition, true);
@@ -300,10 +300,10 @@ class Board {
 	}
 
 	/**
-	 * To modify the type frame of a Panel.
-	 * @param xPosition Row position
-	 * @param yPosition Column position
-	 * @param typeFrame Type Frame
+	 * Modify the frame type of a Panel.
+	 * @param xPosition - Row position
+	 * @param yPosition - Column position
+	 * @param typeFrame - Type Frame
 	 */
 	void setTypePanel(int xPosition, int yPosition, int typeFrame) {
 		illegalPosition(xPosition, yPosition, true);
@@ -312,8 +312,8 @@ class Board {
 	}
 
 	/**
-	 * Operation to display image corresponding to the Board.
-	 * @return New image corresponding to the board
+	 * Get image associated with the board.
+	 * @return image associated with the board
 	 */
 	ColorImage getBoard() {
 
@@ -350,9 +350,9 @@ class Board {
 
 	/**
 	 * This method allows you to split a Panel and create new Panel.
-	 * @param xPosition Row position
-	 * @param yPosition Column position
-	 * @param value Division value
+	 * @param xPosition - Row position
+	 * @param yPosition - Column position
+	 * @param value - Division value
 	 */
 	void setDividirPanel(int xPosition, int yPosition, int value) {
 		illegalPosition(xPosition, yPosition, true);
@@ -401,7 +401,6 @@ class Board {
 		this.setNumberOfPanels(xPosition, currentSizeBoard + value - 1);
 		Panel[] v = new Panel[value];
 
-
 		for (int a = 0; a != v.length; a++) {
 			v[a] = new Panel(images[a], Board[xPosition][yPosition].getSizeFrame(),
 					Board[xPosition][yPosition].getTypeFrame(), Board[xPosition][yPosition].getColorFrame());
@@ -440,10 +439,10 @@ class Board {
 	}
 
 	/**
-	 * Exceptions Launcher.
-	 * @param xPosition Row Position
-	 * @param yPosition Columns Position
-	 * @param compareObject If need compare a Panel default
+	 * Exceptions
+	 * @param xPosition - Row Position
+	 * @param yPosition - Columns Position
+	 * @param compareObject - If need compare a Panel default
 	 */
 	private void illegalPosition(int xPosition, int yPosition, boolean compareObject) {
 		if((xPosition < 0 || xPosition >= Board.length || yPosition < 0 || yPosition >= Board[0].length)){
@@ -458,8 +457,8 @@ class Board {
 	}
 
 	/**
-	 * To know the maximum height of a sticker.
-	 * @param v Panel
+	 * Get the maximum height of a sticker.
+	 * @param v - Panel
 	 * @return The maximum height.
 	 */
 	static int maximumHeight(Panel[] v) {
@@ -474,10 +473,10 @@ class Board {
 	}
 
 	/**
-	 * To know the maximum number of Panels on a strip or the number of Panels on a strip.
-	 * @param v Board.
-	 * @param locationLine Row to know the number of stickers.
-	 * @param access To know the number of Panels on the strip itself.
+	 * Get the maximum number of Panels on a strip or the number of Panels on a strip.
+	 * @param v - Board.
+	 * @param locationLine - Row to know the number of stickers.
+	 * @param access - To know the number of Panels on the strip itself.
 	 * @return The maximum number of Panels.
 	 */
 	static int maximumPanelsStrip(Panel[][] v, int locationLine, boolean access) {
@@ -517,8 +516,8 @@ class Board {
 
 	/**
 	 * Build new Matrix
-	 * @param width Number of columns
-	 * @param height Number of Rows
+	 * @param width - Number of columns
+	 * @param height - Number of Rows
 	 * @return Matrix
 	 */
 	static Panel[][] buildMatrix(int width, int height) {
