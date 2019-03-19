@@ -59,10 +59,13 @@ void setPanel(int xPosition, int yPosition, Panel v)
 <img src="https://raw.githubusercontent.com/dominoesbase/comic-generator/master/resources/images/sapinho.png" width="300"/>
 
 ```java
-Board p = new Board(...);
+Board p = new Board(6);
 
 // Insert panel frog on p
 p.setPanel(0, 1, Panel frog);
+
+// Insert panel car on p
+p.setPanel(1, 2, Panel Car);
 ```
 
 ## Other Features
