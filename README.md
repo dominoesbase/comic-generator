@@ -62,10 +62,10 @@ void setPanel(int xPosition, int yPosition, Panel v)
 Board p = new Board(6);
 
 // Insert panel frog on p
-p.setPanel(0, 1, Panel frog);
+p.setPanel(0, 1, frog);
 
 // Insert panel car on p
-p.setPanel(1, 2, Panel car);
+p.setPanel(1, 2, car);
 ```
 
 ## Other Features
